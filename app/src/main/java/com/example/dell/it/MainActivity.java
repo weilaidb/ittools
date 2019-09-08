@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    private int loop = 0;
+    private final int LOOPMAX = 10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,27 +66,42 @@ public class MainActivity extends AppCompatActivity {
                 "com.kingsoft.Main",
                 "手机未安装 金山词霸");
 
+
+
+//        for (loop = 0;loop < LOOPMAX;loop++)
+//        {
+//            Button btn = new Button("test");
+//            handler_button_pub();
+//        }
+
+
     }
 
     public void button_toactivity_sets() {
 
-        Button btn = (Button) findViewById(R.id.button_books);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-//                    String texttmp = (String) surl;
-//                    Uri uri = Uri.parse(texttmp);
-                    Intent intent = new Intent(MainActivity.this, BookActivity.class);
-//                    startActivity(intent);
-                    MainActivity.this.startActivityForResult(intent, 0x11);
-                } catch (Exception e) {
-                    Toast toast = Toast.makeText(MainActivity.this, "打开活动失败" + "BookActivity" + e.getMessage(), Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
-                    toast.show();
-                }
-            }
-        });
+        handler_button_pub(R.id.button_books, "com.duokan.reader",
+                "com.duokan.reader.DkReaderActivity",
+                "手机未安装多看");
+
+
+
+//        Button btn = (Button) findViewById(R.id.button_books);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                try {
+////                    String texttmp = (String) surl;
+////                    Uri uri = Uri.parse(texttmp);
+//                    Intent intent = new Intent(MainActivity.this, BookActivity.class);
+////                    startActivity(intent);
+//                    MainActivity.this.startActivityForResult(intent, 0x11);
+//                } catch (Exception e) {
+//                    Toast toast = Toast.makeText(MainActivity.this, "打开活动失败" + "BookActivity" + e.getMessage(), Toast.LENGTH_SHORT);
+//                    toast.setGravity(Gravity.CENTER, 0, 0);
+//                    toast.show();
+//                }
+//            }
+//        });
 
     }
 
