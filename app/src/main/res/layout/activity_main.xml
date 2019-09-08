@@ -105,6 +105,13 @@
                     android:text="计算器" />
 
                 <Button
+                    android:id="@+id/button_cidian"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:textSize="22sp"
+                    android:text="词典 英文" />
+
+                <Button
                     android:id="@+id/button_csdn"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
@@ -131,6 +138,28 @@
                     android:layout_height="66sp"
                     android:textSize="22sp"
                     android:text="KERNEL" />
+
+
+                <Button
+                    android:id="@+id/button_dataanalysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:textSize="22sp"
+                    android:text="数据分析" />
+
+                <Button
+                    android:id="@+id/button_rfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:textSize="22sp"
+                    android:text="RFC" />
+
+                <Button
+                    android:id="@+id/button_rfc1588"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:textSize="22sp"
+                    android:text="RFC1588" />
 
 
 

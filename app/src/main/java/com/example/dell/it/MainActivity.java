@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         handler_button_pub_url(R.id.button_python, "https://www.python.org/");
         handler_button_pub_url(R.id.button_linux, "https://www.linux.org/");
         handler_button_pub_url(R.id.button_kernel, "https://www.kernel.org/");
+        handler_button_pub_url(R.id.button_dataanalysis, "https://www.afenxi.com/");
+        handler_button_pub_url(R.id.button_rfc, "https://www.ietf.org/standards/rfcs/");
+        handler_button_pub_url(R.id.button_rfc1588, "https://www.rfc-editor.org/info/rfc1588");
 //        handler_button_pub_url(R.id.button_testfail, "abb");
 
 
@@ -56,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
            handler_button_pub(R.id.button_csdn,"net.csdn.csdnplus",
                    "net.csdn.csdnplus.activity.MainActivity",
                   "手机未安装CSDN");
+
+
+           handler_button_pub(R.id.button_cidian,"com.kingsoft",
+                   "com.kingsoft.Main",
+                  "手机未安装 金山词霸");
 
 
     }
