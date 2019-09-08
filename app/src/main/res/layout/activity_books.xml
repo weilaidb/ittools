@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Hello World!"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="334dp"-->
+    <!--android:layout_height="89dp"-->
+    <!--android:text="Button"-->
+    <!--tools:layout_editor_absoluteX="28dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="vertical"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <Button
+                    android:id="@+id/button_vim"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="VIM 实用技巧"
+                    android:textSize="22sp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_github"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="GITHUB"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_search"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="搜索"-->
+                    <!--android:textSize="22sp" />-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_record"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="记错"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_camera"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="拍一拍"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_yingyeting"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="电信营业厅"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_weixin"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="微信"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_riji"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="日记本"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_caculate"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="计算器"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_cidian"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="词典 英文"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_csdn"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="CSDN"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_python"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="PYTHON"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_linux"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="LINUX"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_kernel"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="KERNEL"-->
+                    <!--android:textSize="22sp" />-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_dataanalysis"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="数据分析"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_books"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="BOOKS"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_rfc"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="RFC"-->
+                    <!--android:textSize="22sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_rfc1588"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="66sp"-->
+                    <!--android:text="RFC1588"-->
+                    <!--android:textSize="22sp" />-->
+
+
+                <!--<Button-->
+                <!--android:id="@+id/button_testfail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="66sp"-->
+                <!--android:textSize="22sp"-->
+                <!--android:text="TEST FAIL" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

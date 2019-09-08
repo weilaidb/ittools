@@ -44,133 +44,137 @@
                     android:id="@+id/button_weather"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="天气" />
+                    android:text="天气"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_github"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="GITHUB" />
+                    android:text="GITHUB"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_search"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="搜索" />
+                    android:text="搜索"
+                    android:textSize="22sp" />
 
 
                 <Button
                     android:id="@+id/button_record"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="记错" />
+                    android:text="记错"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_camera"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="拍一拍" />
+                    android:text="拍一拍"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_yingyeting"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="电信营业厅" />
+                    android:text="电信营业厅"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_weixin"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="微信" />
+                    android:text="微信"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_riji"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="日记本" />
+                    android:text="日记本"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_caculate"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="计算器" />
+                    android:text="计算器"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_cidian"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="词典 英文" />
+                    android:text="词典 英文"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_csdn"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="CSDN" />
+                    android:text="CSDN"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_python"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="PYTHON" />
+                    android:text="PYTHON"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_linux"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="LINUX" />
+                    android:text="LINUX"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_kernel"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="KERNEL" />
+                    android:text="KERNEL"
+                    android:textSize="22sp" />
 
 
                 <Button
                     android:id="@+id/button_dataanalysis"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="数据分析" />
+                    android:text="数据分析"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/button_books"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="BOOKS"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_rfc"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="RFC" />
+                    android:text="RFC"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_rfc1588"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
-                    android:textSize="22sp"
-                    android:text="RFC1588" />
-
-
+                    android:text="RFC1588"
+                    android:textSize="22sp" />
 
 
                 <!--<Button-->
-                    <!--android:id="@+id/button_testfail"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="66sp"-->
-                    <!--android:textSize="22sp"-->
-                    <!--android:text="TEST FAIL" />-->
-
+                <!--android:id="@+id/button_testfail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="66sp"-->
+                <!--android:textSize="22sp"-->
+                <!--android:text="TEST FAIL" />-->
 
 
             </LinearLayout>
