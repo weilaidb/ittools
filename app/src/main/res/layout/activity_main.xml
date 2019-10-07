@@ -169,6 +169,13 @@
                     android:textSize="22sp" />
 
                 <Button
+                    android:id="@+id/button_mailmaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="大师"
+                    android:textSize="22sp" />
+
+                <Button
                     android:id="@+id/button_haoyangmao"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"

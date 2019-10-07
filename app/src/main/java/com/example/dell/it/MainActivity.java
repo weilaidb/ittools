@@ -70,6 +70,10 @@ public class MainActivity extends AppCompatActivity {
                 "com.jingdong.app.mall.main.MainActivity",
                 "手机未安装 京东");
 
+        handler_button_pub(R.id.button_mailmaster, "com.netease.mail",
+                "com.netease.mobimail.activity.LaunchActivity",
+                "手机未安装  邮箱大师");
+
 
     }
 
