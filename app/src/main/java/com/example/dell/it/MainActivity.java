@@ -66,13 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 "com.kingsoft.Main",
                 "手机未安装 金山词霸");
 
-
-
-//        for (loop = 0;loop < LOOPMAX;loop++)
-//        {
-//            Button btn = new Button("test");
-//            handler_button_pub();
-//        }
+        handler_button_pub(R.id.button_haoyangmao, "com.jingdong.app.mall",
+                "com.jingdong.app.mall.main.MainActivity",
+                "手机未安装 京东");
 
 
     }
@@ -82,26 +78,6 @@ public class MainActivity extends AppCompatActivity {
         handler_button_pub(R.id.button_books, "com.duokan.reader",
                 "com.duokan.reader.DkReaderActivity",
                 "手机未安装多看");
-
-
-
-//        Button btn = (Button) findViewById(R.id.button_books);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                try {
-////                    String texttmp = (String) surl;
-////                    Uri uri = Uri.parse(texttmp);
-//                    Intent intent = new Intent(MainActivity.this, BookActivity.class);
-////                    startActivity(intent);
-//                    MainActivity.this.startActivityForResult(intent, 0x11);
-//                } catch (Exception e) {
-//                    Toast toast = Toast.makeText(MainActivity.this, "打开活动失败" + "BookActivity" + e.getMessage(), Toast.LENGTH_SHORT);
-//                    toast.setGravity(Gravity.CENTER, 0, 0);
-//                    toast.show();
-//                }
-//            }
-//        });
 
     }
 
