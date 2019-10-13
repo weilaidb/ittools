@@ -131,7 +131,40 @@ public class MainActivity extends AppCompatActivity {
                 "com.sinaapp.qwwpoo.rar.SplashActivity",
                 "手机未安装  压缩软件");
 
+        //我查查
+        handler_button_pub_self("我查查","com.wochacha",
+                "com.wochacha.StartupActivity",
+                "手机未安装  我查查");
 
+        //相册
+        handler_button_pub_self("相册","com.miui.gallery",
+                "com.miui.gallery.activity.HomePageActivity",
+                "手机未安装  相册");
+
+
+        //相册
+        handler_button_pub_self("英语流利说","com.liulishuo.engzo",
+                "com.liulishuo.engzo.app.activity.LauncherActivity",
+                "手机未安装  英语流利说");
+
+
+        handler_button_pub_url_self("一些实用的GitHub项目" ,"https://blog.csdn.net/qq_36772866/article/details/102384240");
+        handler_button_pub_url_self("JavaGuide" ,"https://github.com/Snailclimb/JavaGuide");
+        handler_button_pub_url_self("100-Days-of-ML-Code" ,"https://github.com/Avik-Jain/100-Days-of-ML-Code-Chinese-Version");
+        handler_button_pub_url_self("Python-100-Days " ,"https://github.com/jackfrued/Python-100-Days ");
+        handler_button_pub_url_self("git-flight-rules" ,"https://github.com/k88hudson/git-flight-rules");
+        handler_button_pub_url_self("first-contributions" ,"https://github.com/firstcontributions/first-contributions");
+        handler_button_pub_url_self("SQLAdvisor" ,"https://github.com/Meituan-Dianping/SQLAdvisor");
+        handler_button_pub_url_self("system-design-primer" ,"https://github.com/donnemartin/system-design-primer");
+        handler_button_pub_url_self("Tensorflow " ,"https://github.com/tensorflow/models");
+        handler_button_pub_url_self("TensorFlow实现模型" ,"https://github.com/tensorflow/models/blob/master/research");
+        handler_button_pub_url_self("TensorFlow教程" ,"https://github.com/tensorflow/models/blob/master/tutorials");
+        handler_button_pub_url_self("arthas" ,"https://github.com/alibaba/arthas");
+        handler_button_pub_url_self("interviews" ,"https://github.com/kdn251/interviews");
+        handler_button_pub_url_self("proxyee-down " ,"https://github.com/proxyee-down-org/proxyee-down");
+        handler_button_pub_url_self("incubator-dubbo" ,"https://github.com/apache/incubator-dubbo");
+        handler_button_pub_url_self("java-design-patterns " ,"https://github.com/iluwatar/java-design-patterns ");
+        handler_button_pub_url_self("elasticsearch" ,"https://github.com/elastic/elasticsearch");
 
     }
 
