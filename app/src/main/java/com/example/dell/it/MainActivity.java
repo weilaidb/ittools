@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         //open application
         handler_button_pub(R.id.button_weather, "com.moji.mjweather", "com.moji.mjweather.MainActivity", "手机没有安装墨迹天气");
+        handler_button_pub(R.id.button_calendar, "com.android.calendar", "com.android.calendar.homepage.AllInOneActivity", "手机没有安装日历");
         handler_button_pub(R.id.button_github, "me.majiajie.mygithub", "me.majiajie.mygithub.activities.welcome.WelcomeActivity", "手机没有安装GitHub");
         handler_button_pub(R.id.button_search, "com.microsoft.bing", "com.microsoft.clients.bing.app.MainActivity", "手机没有安装必应");
         handler_button_pub(R.id.button_record, "com.miui.notes",
@@ -118,6 +119,17 @@ public class MainActivity extends AppCompatActivity {
         handler_button_pub_self("嘀嗒出行","com.didapinche.booking",
                 "com.didapinche.booking.home.activity.StartActivity",
                 "手机未安装  12306");
+
+        //小米
+        handler_button_pub_self("遥控器","com.duokan.phone.remotecontroller",
+                "com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2",
+                "手机未安装  小米遥控器");
+
+
+        //压缩软件
+        handler_button_pub_self("压缩","com.sinaapp.qwwpoo.rar",
+                "com.sinaapp.qwwpoo.rar.SplashActivity",
+                "手机未安装  压缩软件");
 
 
 

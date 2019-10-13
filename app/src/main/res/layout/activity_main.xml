@@ -48,6 +48,13 @@
                     android:text="天气"
                     android:textSize="22sp" />
 
+                 <Button
+                    android:id="@+id/button_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="日历"
+                    android:textSize="22sp" />
+
                 <Button
                     android:id="@+id/button_github"
                     android:layout_width="match_parent"
