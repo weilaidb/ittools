@@ -34,6 +34,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/linelayout_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fadingEdge="vertical"
@@ -53,12 +54,24 @@
                     android:layout_height="66sp"
                     android:text="GITHUB"
                     android:textSize="22sp" />
+                <Button
+                    android:id="@+id/button_kernelcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="KERNEL C"
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/button_search"
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
                     android:text="搜索"
+                    android:textSize="22sp" />
+                <Button
+                    android:id="@+id/button_search2"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="搜索2"
                     android:textSize="22sp" />
 
 
@@ -140,6 +153,7 @@
                     android:textSize="22sp" />
 
 
+
                 <Button
                     android:id="@+id/button_dataanalysis"
                     android:layout_width="match_parent"
@@ -180,6 +194,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="66sp"
                     android:text="薅羊毛"
+                    android:textSize="22sp" />
+
+
+                <Button
+                    android:id="@+id/button_netmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="66sp"
+                    android:text="查看网络"
                     android:textSize="22sp" />
 
 

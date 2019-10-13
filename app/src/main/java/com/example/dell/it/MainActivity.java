@@ -8,11 +8,36 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+
+
+
 
 public class MainActivity extends AppCompatActivity {
     private int loop = 0;
     private final int LOOPMAX = 10;
+
+    private int row = 10;
+    private int column = 1;
+
+    public class CBtnSets extends AppCompatActivity{
+        private Button m_Buttonid;
+        private String m_url;
+        private String m_pkgname;
+        private String m_actname;
+        private String m_errtips;
+
+        CBtnSets() {
+            m_Buttonid = new Button(this);
+            m_Buttonid.setTextSize(11);
+            m_Buttonid.setPadding(0,0,0,0);
+        }
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +51,12 @@ public class MainActivity extends AppCompatActivity {
         handler_button_pub_url(R.id.button_python, "https://www.python.org/");
         handler_button_pub_url(R.id.button_linux, "https://www.linux.org/");
         handler_button_pub_url(R.id.button_kernel, "https://www.kernel.org/");
+        handler_button_pub_url(R.id.button_kernelcode, "https://github.com/torvalds/linux");
         handler_button_pub_url(R.id.button_dataanalysis, "https://www.afenxi.com/");
         handler_button_pub_url(R.id.button_rfc, "https://www.ietf.org/standards/rfcs/");
         handler_button_pub_url(R.id.button_rfc1588, "https://www.rfc-editor.org/info/rfc1588");
+        handler_button_pub_url(R.id.button_netmanager, "http://192.168.1.1/");
+        handler_button_pub_url(R.id.button_search2, "https://www.baidu.com/");
 //        handler_button_pub_url(R.id.button_testfail, "abb");
 
 
@@ -74,8 +102,28 @@ public class MainActivity extends AppCompatActivity {
                 "com.netease.mobimail.activity.LaunchActivity",
                 "手机未安装  邮箱大师");
 
+        //自定义的链接
+        handler_button_pub_self("TPLINK","com.tplink.cloudrouter",
+                "com.tplink.cloudrouter.activity.basesection.InitAppActivity",
+                "手机未安装  TPLINK");
+//        com.tplink.cloudrouter/com.tplink.cloudrouter.activity.basesection.InitAppActivity
+
+//        handler_button_pub_url_self("百度","http://www.baidu.com");
+
+        handler_button_pub_self("火车票","com.MobileTicket",
+                "com.alipay.mobile.quinox.LauncherActivity",
+                "手机未安装  12306");
+        handler_button_pub_url_self("火车票 h","https://www.12306.cn/index/");
+        handler_button_pub_url_self("汽车票","http://www.xn--1lq42ao4e8vmv9fp21byfmg94a9em.com/");
+        handler_button_pub_self("嘀嗒出行","com.didapinche.booking",
+                "com.didapinche.booking.home.activity.StartActivity",
+                "手机未安装  12306");
+
+
 
     }
+
+
 
     public void button_toactivity_sets() {
 
@@ -97,27 +145,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-//    public void handler_button_pub_activity(int id, final String pkgname, final String activityname, final String errortip) {
-//        Button btn = (Button) findViewById(id);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                try {
-////                    String texttmp = (String) surl;
-////                    Uri uri = Uri.parse(texttmp);
-//                    Intent intent = new Intent(MainActivity.this, Second);
-//                    startActivity(intent);
-////                MainActivity.this.startActivityForResult(intent, 0x11);
-//                } catch (Exception e) {
-//                    Toast toast = Toast.makeText(MainActivity.this, "打开活动失败" + errortip, Toast.LENGTH_SHORT);
-//                    toast.setGravity(Gravity.CENTER, 0, 0);
-//                    toast.show();
-//                }
-//            }
-//        });
-//    }
-
 
     public void handler_button_pub_url(int id, final String surl) {
         Button btn = (Button) findViewById(id);
@@ -160,6 +187,59 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
+//自定义按钮
+    public void handler_button_pub_url_self(final String title, final String surl) {
+        Button egbtn = (Button)findViewById(R.id.button_weather);
+        Button btn = new Button(this);
+        btn.setText(title);
+        btn.setTextSize(22);
+        btn.setWidth(egbtn.getLayoutParams().width);
+        btn.setHeight(egbtn.getLayoutParams().height);
+        LinearLayout layout = (LinearLayout)findViewById(R.id.linelayout_main);
+        layout.addView(btn);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                try {
+                    String texttmp = (String) surl;
+                    Uri uri = Uri.parse(texttmp);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
+//                MainActivity.this.startActivityForResult(intent, 0x11);
+                } catch (Exception e) {
+                    Toast toast = Toast.makeText(MainActivity.this, "打开网址失败" + surl, Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                }
+            }
+        });
+    }
+
+    public void handler_button_pub_self(final String title, final String pkgname, final String activityname, final String errortip) {
+        Button egbtn = (Button)findViewById(R.id.button_weather);
+        Button btn = new Button(this);
+        btn.setText(title);
+        btn.setTextSize(22);
+        btn.setWidth(egbtn.getLayoutParams().width);
+        btn.setHeight(egbtn.getLayoutParams().height);
+        LinearLayout layout = (LinearLayout)findViewById(R.id.linelayout_main);
+        layout.addView(btn);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pubIntentJump(pkgname,
+                        activityname,
+                        errortip
+                );
+            }
+        });
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
